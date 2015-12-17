@@ -1,0 +1,28 @@
+<style>
+    .row i{
+        font-size:25px;
+        color:green;
+    }
+    .row {
+        padding:0px;
+    }
+</style>
+<ion-view>
+    <ion-nav-view name="leftTabViews"></ion-nav-view> 
+
+    <ion-footer-bar >
+     <div class="row">
+        <div class="col col-33 col-offset-10">
+            <a  ui-sref="index.sessions"><i class="ion-chatboxes"></i></a>
+        </div>
+
+        <div class="col col-33" ng-click="usersDict.getUserFriends(currentUser)">
+            <a  ui-sref="index.friends" ><i class="ion-person-stalker"></i></a>
+        </div>
+
+        <div class="col col-33">
+            <a  ui-sref="index.settings" ><i class="ion-ios-gear"></i></a>
+        </div>
+    </div>
+    </ion-footer-bar >
+</ion-view>
